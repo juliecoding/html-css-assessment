@@ -1,0 +1,86 @@
+html {
+  background: url("./img/main-bg.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.7em;
+  padding-top: 30px;
+}
+
+.small-nav {
+  display: none;
+}
+
+.main-header {
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.your {
+  font-size: 7em;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.subtext {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.fa-arrow-circle-down {
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+i::before{
+    background:transparent;
+}
+
+/***********MEDIA QUERIES**********/
+
+@media (max-width: 710px) {
+  nav {
+    display: none;
+  }
+
+  .small-nav {
+    display: block;
+    padding: 20px 20px 0 20px;
+  }
+
+  .social-media {
+    display: inline-block;
+    transform: translateY(50%);
+    float: right;
+  }
+
+  .hamburger {
+    height: 80px;
+    float: left;
+    margin-left: 10px;
+  }
+
+  .social-media-icons {
+    height: 40px;
+    margin-right: 25px
+  }
+
+
+}
